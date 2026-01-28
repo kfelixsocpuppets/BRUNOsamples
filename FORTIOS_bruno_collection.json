@@ -1381,14 +1381,14 @@
           {
             "uid": "qTd8AmhnSrtwDNWjVIWn7",
             "name": "API",
-            "value": "######################################",
+            "value": "####################################",
             "enabled": true,
             "local": false
           },
           {
             "uid": "H7PK9lpEMIDFKeyyovK8l",
             "name": "HOST",
-            "value": "######################################",
+            "value": "####################################",
             "enabled": true,
             "local": false
           }
