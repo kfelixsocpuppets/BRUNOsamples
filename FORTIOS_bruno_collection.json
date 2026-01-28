@@ -601,7 +601,7 @@
       "tags": [],
       "examples": [],
       "request": {
-        "url": "https://{{HOST}}/api/v2/monitor/arp",
+        "url": "https://{{HOST}}/api/v2/monitor/system/arp",
         "method": "GET",
         "headers": [],
         "params": [],
@@ -901,6 +901,456 @@
           "mode": "inherit"
         }
       }
+    },
+    {
+      "type": "http",
+      "name": "monitor_firewall-session",
+      "filename": "monitor_firewall-session.bru",
+      "seq": 21,
+      "settings": {
+        "encodeUrl": true,
+        "timeout": 0,
+        "followRedirects": true,
+        "maxRedirects": 5
+      },
+      "tags": [],
+      "examples": [],
+      "request": {
+        "url": "https://{{HOST}}/api/v2/monitor/firewall/session",
+        "method": "GET",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "none",
+          "json": null,
+          "text": null,
+          "xml": null,
+          "graphql": null,
+          "sparql": null,
+          "formUrlEncoded": [],
+          "multipartForm": [],
+          "file": []
+        },
+        "script": {
+          "req": null,
+          "res": null
+        },
+        "vars": {
+          "req": [],
+          "res": []
+        },
+        "assertions": [],
+        "tests": null,
+        "docs": null,
+        "auth": {
+          "mode": "inherit"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "monitor_sdwan",
+      "filename": "monitor_sdwan.bru",
+      "seq": 22,
+      "settings": {
+        "encodeUrl": true,
+        "timeout": 0,
+        "followRedirects": true,
+        "maxRedirects": 5
+      },
+      "tags": [],
+      "examples": [],
+      "request": {
+        "url": "https://{{HOST}}/api/v2/monitor/system/ha-statistics",
+        "method": "GET",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "none",
+          "json": null,
+          "text": null,
+          "xml": null,
+          "graphql": null,
+          "sparql": null,
+          "formUrlEncoded": [],
+          "multipartForm": [],
+          "file": []
+        },
+        "script": {
+          "req": null,
+          "res": null
+        },
+        "vars": {
+          "req": [],
+          "res": []
+        },
+        "assertions": [],
+        "tests": null,
+        "docs": null,
+        "auth": {
+          "mode": "inherit"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "monitor_dhcp_lease",
+      "filename": "monitor_dhcp_lease.bru",
+      "seq": 23,
+      "settings": {
+        "encodeUrl": true,
+        "timeout": 0,
+        "followRedirects": true,
+        "maxRedirects": 5
+      },
+      "tags": [],
+      "examples": [],
+      "request": {
+        "url": "https://{{HOST}}/api/v2/monitor/system/dhcp/select",
+        "method": "GET",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "none",
+          "json": null,
+          "text": null,
+          "xml": null,
+          "graphql": null,
+          "sparql": null,
+          "formUrlEncoded": [],
+          "multipartForm": [],
+          "file": []
+        },
+        "script": {
+          "req": null,
+          "res": null
+        },
+        "vars": {
+          "req": [],
+          "res": []
+        },
+        "assertions": [],
+        "tests": null,
+        "docs": null,
+        "auth": {
+          "mode": "inherit"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "monitor_time",
+      "filename": "monitor_time.bru",
+      "seq": 24,
+      "settings": {
+        "encodeUrl": true,
+        "timeout": 0,
+        "followRedirects": true,
+        "maxRedirects": 5
+      },
+      "tags": [],
+      "examples": [],
+      "request": {
+        "url": "https://{{HOST}}/api/v2/monitor/system/time/",
+        "method": "GET",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "none",
+          "json": null,
+          "text": null,
+          "xml": null,
+          "graphql": null,
+          "sparql": null,
+          "formUrlEncoded": [],
+          "multipartForm": [],
+          "file": []
+        },
+        "script": {
+          "req": null,
+          "res": null
+        },
+        "vars": {
+          "req": [],
+          "res": []
+        },
+        "assertions": [],
+        "tests": null,
+        "docs": null,
+        "auth": {
+          "mode": "inherit"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "monitor_route-summary",
+      "filename": "monitor_route-summary.bru",
+      "seq": 25,
+      "settings": {
+        "encodeUrl": true,
+        "timeout": 0,
+        "followRedirects": true,
+        "maxRedirects": 5
+      },
+      "tags": [],
+      "examples": [],
+      "request": {
+        "url": "https://{{HOST}}/api/v2/monitor/router/statistics/select",
+        "method": "GET",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "none",
+          "json": null,
+          "text": null,
+          "xml": null,
+          "graphql": null,
+          "sparql": null,
+          "formUrlEncoded": [],
+          "multipartForm": [],
+          "file": []
+        },
+        "script": {
+          "req": null,
+          "res": null
+        },
+        "vars": {
+          "req": [],
+          "res": []
+        },
+        "assertions": [],
+        "tests": null,
+        "docs": null,
+        "auth": {
+          "mode": "inherit"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "monitor_logs",
+      "filename": "monitor_logs.bru",
+      "seq": 26,
+      "settings": {
+        "encodeUrl": true,
+        "timeout": 0,
+        "followRedirects": true,
+        "maxRedirects": 5
+      },
+      "tags": [],
+      "examples": [],
+      "request": {
+        "url": "https://{{HOST}}/api/v2/monitor/log/stats",
+        "method": "GET",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "none",
+          "json": null,
+          "text": null,
+          "xml": null,
+          "graphql": null,
+          "sparql": null,
+          "formUrlEncoded": [],
+          "multipartForm": [],
+          "file": []
+        },
+        "script": {
+          "req": null,
+          "res": null
+        },
+        "vars": {
+          "req": [],
+          "res": []
+        },
+        "assertions": [],
+        "tests": null,
+        "docs": null,
+        "auth": {
+          "mode": "inherit"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "monitor_logs-state",
+      "filename": "monitor_logs-state.bru",
+      "seq": 27,
+      "settings": {
+        "encodeUrl": true,
+        "timeout": 0,
+        "followRedirects": true,
+        "maxRedirects": 5
+      },
+      "tags": [],
+      "examples": [],
+      "request": {
+        "url": "https://{{HOST}}/api/v2/monitor/log/device/state",
+        "method": "GET",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "none",
+          "json": null,
+          "text": null,
+          "xml": null,
+          "graphql": null,
+          "sparql": null,
+          "formUrlEncoded": [],
+          "multipartForm": [],
+          "file": []
+        },
+        "script": {
+          "req": null,
+          "res": null
+        },
+        "vars": {
+          "req": [],
+          "res": []
+        },
+        "assertions": [],
+        "tests": null,
+        "docs": null,
+        "auth": {
+          "mode": "inherit"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "monitor_logs-sum",
+      "filename": "monitor_logs-sum.bru",
+      "seq": 28,
+      "settings": {
+        "encodeUrl": true,
+        "timeout": 0,
+        "followRedirects": true,
+        "maxRedirects": 5
+      },
+      "tags": [],
+      "examples": [],
+      "request": {
+        "url": "https://{{HOST}}/api/v2/monitor/log/current-disk-usage",
+        "method": "GET",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "none",
+          "json": null,
+          "text": null,
+          "xml": null,
+          "graphql": null,
+          "sparql": null,
+          "formUrlEncoded": [],
+          "multipartForm": [],
+          "file": []
+        },
+        "script": {
+          "req": null,
+          "res": null
+        },
+        "vars": {
+          "req": [],
+          "res": []
+        },
+        "assertions": [],
+        "tests": null,
+        "docs": null,
+        "auth": {
+          "mode": "inherit"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "get_licensetstatus",
+      "filename": "get_licensetstatus.bru",
+      "seq": 29,
+      "settings": {
+        "encodeUrl": true,
+        "timeout": 0,
+        "followRedirects": true,
+        "maxRedirects": 5
+      },
+      "tags": [],
+      "examples": [],
+      "request": {
+        "url": "https://{{HOST}}/api/v2/monitor/license",
+        "method": "GET",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "none",
+          "json": null,
+          "text": null,
+          "xml": null,
+          "graphql": null,
+          "sparql": null,
+          "formUrlEncoded": [],
+          "multipartForm": [],
+          "file": []
+        },
+        "script": {
+          "req": null,
+          "res": null
+        },
+        "vars": {
+          "req": [],
+          "res": []
+        },
+        "assertions": [],
+        "tests": null,
+        "docs": null,
+        "auth": {
+          "mode": "inherit"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "geo_lookup",
+      "filename": "geo_lookup.bru",
+      "seq": 30,
+      "settings": {
+        "encodeUrl": true,
+        "timeout": 0,
+        "followRedirects": true,
+        "maxRedirects": 5
+      },
+      "tags": [],
+      "examples": [],
+      "request": {
+        "url": "https://{{HOST}}/api/v2/monitor/license",
+        "method": "GET",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "none",
+          "json": null,
+          "text": null,
+          "xml": null,
+          "graphql": null,
+          "sparql": null,
+          "formUrlEncoded": [],
+          "multipartForm": [],
+          "file": []
+        },
+        "script": {
+          "req": null,
+          "res": null
+        },
+        "vars": {
+          "req": [],
+          "res": []
+        },
+        "assertions": [],
+        "tests": null,
+        "docs": null,
+        "auth": {
+          "mode": "inherit"
+        }
+      }
     }
   ],
   "environments": [],
@@ -931,14 +1381,14 @@
           {
             "uid": "qTd8AmhnSrtwDNWjVIWn7",
             "name": "API",
-            "value": "#############",
+            "value": "######################################",
             "enabled": true,
             "local": false
           },
           {
             "uid": "H7PK9lpEMIDFKeyyovK8l",
             "name": "HOST",
-            "value": "%%%%%%%%%%%%%%",
+            "value": "######################################",
             "enabled": true,
             "local": false
           }
@@ -968,6 +1418,6 @@
       }
     }
   },
-  "exportedAt": "2026-01-28T19:02:30.795Z",
+  "exportedAt": "2026-01-28T20:43:49.470Z",
   "exportedUsing": "Bruno/3.0.2"
 }
