@@ -1,0 +1,973 @@
+{
+  "name": "FORTIOS_bruno_collection",
+  "version": "1",
+  "items": [
+    {
+      "type": "http",
+      "name": "get_interface",
+      "filename": "get_interface.bru",
+      "seq": 2,
+      "settings": {
+        "encodeUrl": true,
+        "timeout": 0,
+        "followRedirects": true,
+        "maxRedirects": 5
+      },
+      "tags": [],
+      "examples": [],
+      "request": {
+        "url": "https://{{HOST}}/api/v2/cmdb/system/interface/",
+        "method": "GET",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "none",
+          "json": null,
+          "text": null,
+          "xml": null,
+          "graphql": null,
+          "sparql": null,
+          "formUrlEncoded": [],
+          "multipartForm": [],
+          "file": []
+        },
+        "script": {
+          "req": null,
+          "res": null
+        },
+        "vars": {
+          "req": [],
+          "res": []
+        },
+        "assertions": [],
+        "tests": null,
+        "docs": null,
+        "auth": {
+          "mode": "inherit"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "get_policy",
+      "filename": "get_policy.bru",
+      "seq": 3,
+      "settings": {
+        "encodeUrl": true,
+        "timeout": 0,
+        "followRedirects": true,
+        "maxRedirects": 5
+      },
+      "tags": [],
+      "examples": [],
+      "request": {
+        "url": "https://{{HOST}}/api/v2/cmdb/firewall/policy",
+        "method": "GET",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "none",
+          "json": null,
+          "text": null,
+          "xml": null,
+          "graphql": null,
+          "sparql": null,
+          "formUrlEncoded": [],
+          "multipartForm": [],
+          "file": []
+        },
+        "script": {
+          "req": null,
+          "res": null
+        },
+        "vars": {
+          "req": [],
+          "res": []
+        },
+        "assertions": [],
+        "tests": null,
+        "docs": null,
+        "auth": {
+          "mode": "inherit"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "get_group",
+      "filename": "get_group.bru",
+      "seq": 4,
+      "settings": {
+        "encodeUrl": true,
+        "timeout": 0,
+        "followRedirects": true,
+        "maxRedirects": 5
+      },
+      "tags": [],
+      "examples": [],
+      "request": {
+        "url": "https://{{HOST}}/api/v2/cmdb/firewall/addrgrp",
+        "method": "GET",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "none",
+          "json": null,
+          "text": null,
+          "xml": null,
+          "graphql": null,
+          "sparql": null,
+          "formUrlEncoded": [],
+          "multipartForm": [],
+          "file": []
+        },
+        "script": {
+          "req": null,
+          "res": null
+        },
+        "vars": {
+          "req": [],
+          "res": []
+        },
+        "assertions": [],
+        "tests": null,
+        "docs": null,
+        "auth": {
+          "mode": "inherit"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "get_address6",
+      "filename": "get_address6.bru",
+      "seq": 5,
+      "settings": {
+        "encodeUrl": true,
+        "timeout": 0,
+        "followRedirects": true,
+        "maxRedirects": 5
+      },
+      "tags": [],
+      "examples": [],
+      "request": {
+        "url": "https://{{HOST}}/api/v2/cmdb/firewall/address6",
+        "method": "GET",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "none",
+          "json": null,
+          "text": null,
+          "xml": null,
+          "graphql": null,
+          "sparql": null,
+          "formUrlEncoded": [],
+          "multipartForm": [],
+          "file": []
+        },
+        "script": {
+          "req": null,
+          "res": null
+        },
+        "vars": {
+          "req": [],
+          "res": []
+        },
+        "assertions": [],
+        "tests": null,
+        "docs": null,
+        "auth": {
+          "mode": "inherit"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "get_group6",
+      "filename": "get_group6.bru",
+      "seq": 6,
+      "settings": {
+        "encodeUrl": true,
+        "timeout": 0,
+        "followRedirects": true,
+        "maxRedirects": 5
+      },
+      "tags": [],
+      "examples": [],
+      "request": {
+        "url": "https://{{HOST}}/api/v2/cmdb/firewall/addrgrp",
+        "method": "GET",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "none",
+          "json": null,
+          "text": null,
+          "xml": null,
+          "graphql": null,
+          "sparql": null,
+          "formUrlEncoded": [],
+          "multipartForm": [],
+          "file": []
+        },
+        "script": {
+          "req": null,
+          "res": null
+        },
+        "vars": {
+          "req": [],
+          "res": []
+        },
+        "assertions": [],
+        "tests": null,
+        "docs": null,
+        "auth": {
+          "mode": "inherit"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "get_ippool",
+      "filename": "get_ippool.bru",
+      "seq": 7,
+      "settings": {
+        "encodeUrl": true,
+        "timeout": 0,
+        "followRedirects": true,
+        "maxRedirects": 5
+      },
+      "tags": [],
+      "examples": [],
+      "request": {
+        "url": "https://{{HOST}}/api/v2/cmdb/firewall/ippool",
+        "method": "GET",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "none",
+          "json": null,
+          "text": null,
+          "xml": null,
+          "graphql": null,
+          "sparql": null,
+          "formUrlEncoded": [],
+          "multipartForm": [],
+          "file": []
+        },
+        "script": {
+          "req": null,
+          "res": null
+        },
+        "vars": {
+          "req": [],
+          "res": []
+        },
+        "assertions": [],
+        "tests": null,
+        "docs": null,
+        "auth": {
+          "mode": "inherit"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "get_ippool6",
+      "filename": "get_ippool6.bru",
+      "seq": 8,
+      "settings": {
+        "encodeUrl": true,
+        "timeout": 0,
+        "followRedirects": true,
+        "maxRedirects": 5
+      },
+      "tags": [],
+      "examples": [],
+      "request": {
+        "url": "https://{{HOST}}/api/v2/cmdb/firewall/pool6",
+        "method": "GET",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "none",
+          "json": null,
+          "text": null,
+          "xml": null,
+          "graphql": null,
+          "sparql": null,
+          "formUrlEncoded": [],
+          "multipartForm": [],
+          "file": []
+        },
+        "script": {
+          "req": null,
+          "res": null
+        },
+        "vars": {
+          "req": [],
+          "res": []
+        },
+        "assertions": [],
+        "tests": null,
+        "docs": null,
+        "auth": {
+          "mode": "inherit"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "get_multicast-address",
+      "filename": "get_multicast-address.bru",
+      "seq": 9,
+      "settings": {
+        "encodeUrl": true,
+        "timeout": 0,
+        "followRedirects": true,
+        "maxRedirects": 5
+      },
+      "tags": [],
+      "examples": [],
+      "request": {
+        "url": "https://{{HOST}}/api/v2/cmdb/firewall/multicast-address",
+        "method": "GET",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "none",
+          "json": null,
+          "text": null,
+          "xml": null,
+          "graphql": null,
+          "sparql": null,
+          "formUrlEncoded": [],
+          "multipartForm": [],
+          "file": []
+        },
+        "script": {
+          "req": null,
+          "res": null
+        },
+        "vars": {
+          "req": [],
+          "res": []
+        },
+        "assertions": [],
+        "tests": null,
+        "docs": null,
+        "auth": {
+          "mode": "inherit"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "get_multicast-address6",
+      "filename": "get_multicast-address6.bru",
+      "seq": 10,
+      "settings": {
+        "encodeUrl": true,
+        "timeout": 0,
+        "followRedirects": true,
+        "maxRedirects": 5
+      },
+      "tags": [],
+      "examples": [],
+      "request": {
+        "url": "https://{{HOST}}/api/v2/cmdb/firewall/multicast-address6",
+        "method": "GET",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "none",
+          "json": null,
+          "text": null,
+          "xml": null,
+          "graphql": null,
+          "sparql": null,
+          "formUrlEncoded": [],
+          "multipartForm": [],
+          "file": []
+        },
+        "script": {
+          "req": null,
+          "res": null
+        },
+        "vars": {
+          "req": [],
+          "res": []
+        },
+        "assertions": [],
+        "tests": null,
+        "docs": null,
+        "auth": {
+          "mode": "inherit"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "get_service",
+      "filename": "get_service.bru",
+      "seq": 11,
+      "settings": {
+        "encodeUrl": true,
+        "timeout": 0,
+        "followRedirects": true,
+        "maxRedirects": 5
+      },
+      "tags": [],
+      "examples": [],
+      "request": {
+        "url": "https://{{HOST}}/api/v2/cmdb/firewall.service/custom/",
+        "method": "GET",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "none",
+          "json": null,
+          "text": null,
+          "xml": null,
+          "graphql": null,
+          "sparql": null,
+          "formUrlEncoded": [],
+          "multipartForm": [],
+          "file": []
+        },
+        "script": {
+          "req": null,
+          "res": null
+        },
+        "vars": {
+          "req": [],
+          "res": []
+        },
+        "assertions": [],
+        "tests": null,
+        "docs": null,
+        "auth": {
+          "mode": "inherit"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "get_servicegroupi",
+      "filename": "get_servicegroupi.bru",
+      "seq": 12,
+      "settings": {
+        "encodeUrl": true,
+        "timeout": 0,
+        "followRedirects": true,
+        "maxRedirects": 5
+      },
+      "tags": [],
+      "examples": [],
+      "request": {
+        "url": "https://{{HOST}}/api/v2/cmdb/firewall.service/group",
+        "method": "GET",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "none",
+          "json": null,
+          "text": null,
+          "xml": null,
+          "graphql": null,
+          "sparql": null,
+          "formUrlEncoded": [],
+          "multipartForm": [],
+          "file": []
+        },
+        "script": {
+          "req": null,
+          "res": null
+        },
+        "vars": {
+          "req": [],
+          "res": []
+        },
+        "assertions": [],
+        "tests": null,
+        "docs": null,
+        "auth": {
+          "mode": "inherit"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "monitor_rttable_inet",
+      "filename": "monitor_rttable_inet.bru",
+      "seq": 13,
+      "settings": {
+        "encodeUrl": true,
+        "timeout": 0,
+        "followRedirects": true,
+        "maxRedirects": 5
+      },
+      "tags": [],
+      "examples": [],
+      "request": {
+        "url": "https://{{HOST}}/api/v2/monitor/router/ipv4",
+        "method": "GET",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "none",
+          "json": null,
+          "text": null,
+          "xml": null,
+          "graphql": null,
+          "sparql": null,
+          "formUrlEncoded": [],
+          "multipartForm": [],
+          "file": []
+        },
+        "script": {
+          "req": null,
+          "res": null
+        },
+        "vars": {
+          "req": [],
+          "res": []
+        },
+        "assertions": [],
+        "tests": null,
+        "docs": null,
+        "auth": {
+          "mode": "inherit"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "monitor_rttable_inet6",
+      "filename": "monitor_rttable_inet6.bru",
+      "seq": 14,
+      "settings": {
+        "encodeUrl": true,
+        "timeout": 0,
+        "followRedirects": true,
+        "maxRedirects": 5
+      },
+      "tags": [],
+      "examples": [],
+      "request": {
+        "url": "https://{{HOST}}/api/v2/monitor/router/ipv6",
+        "method": "GET",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "none",
+          "json": null,
+          "text": null,
+          "xml": null,
+          "graphql": null,
+          "sparql": null,
+          "formUrlEncoded": [],
+          "multipartForm": [],
+          "file": []
+        },
+        "script": {
+          "req": null,
+          "res": null
+        },
+        "vars": {
+          "req": [],
+          "res": []
+        },
+        "assertions": [],
+        "tests": null,
+        "docs": null,
+        "auth": {
+          "mode": "inherit"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "monitor_arp",
+      "filename": "monitor_arp.bru",
+      "seq": 15,
+      "settings": {
+        "encodeUrl": true,
+        "timeout": 0,
+        "followRedirects": true,
+        "maxRedirects": 5
+      },
+      "tags": [],
+      "examples": [],
+      "request": {
+        "url": "https://{{HOST}}/api/v2/monitor/arp",
+        "method": "GET",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "none",
+          "json": null,
+          "text": null,
+          "xml": null,
+          "graphql": null,
+          "sparql": null,
+          "formUrlEncoded": [],
+          "multipartForm": [],
+          "file": []
+        },
+        "script": {
+          "req": null,
+          "res": null
+        },
+        "vars": {
+          "req": [],
+          "res": []
+        },
+        "assertions": [],
+        "tests": null,
+        "docs": null,
+        "auth": {
+          "mode": "inherit"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "monitor_resource",
+      "filename": "monitor_resource.bru",
+      "seq": 16,
+      "settings": {
+        "encodeUrl": true,
+        "timeout": 0,
+        "followRedirects": true,
+        "maxRedirects": 5
+      },
+      "tags": [],
+      "examples": [],
+      "request": {
+        "url": "https://{{HOST}}/api/v2/monitor/system/resource/usage",
+        "method": "GET",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "none",
+          "json": null,
+          "text": null,
+          "xml": null,
+          "graphql": null,
+          "sparql": null,
+          "formUrlEncoded": [],
+          "multipartForm": [],
+          "file": []
+        },
+        "script": {
+          "req": null,
+          "res": null
+        },
+        "vars": {
+          "req": [],
+          "res": []
+        },
+        "assertions": [],
+        "tests": null,
+        "docs": null,
+        "auth": {
+          "mode": "inherit"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "monitor_ha",
+      "filename": "monitor_ha.bru",
+      "seq": 17,
+      "settings": {
+        "encodeUrl": true,
+        "timeout": 0,
+        "followRedirects": true,
+        "maxRedirects": 5
+      },
+      "tags": [],
+      "examples": [],
+      "request": {
+        "url": "https://{{HOST}}/api/v2/monitor/system/ha-statistics",
+        "method": "GET",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "none",
+          "json": null,
+          "text": null,
+          "xml": null,
+          "graphql": null,
+          "sparql": null,
+          "formUrlEncoded": [],
+          "multipartForm": [],
+          "file": []
+        },
+        "script": {
+          "req": null,
+          "res": null
+        },
+        "vars": {
+          "req": [],
+          "res": []
+        },
+        "assertions": [],
+        "tests": null,
+        "docs": null,
+        "auth": {
+          "mode": "inherit"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "monitor_ha-peer",
+      "filename": "monitor_ha-peer.bru",
+      "seq": 18,
+      "settings": {
+        "encodeUrl": true,
+        "timeout": 0,
+        "followRedirects": true,
+        "maxRedirects": 5
+      },
+      "tags": [],
+      "examples": [],
+      "request": {
+        "url": "https://{{HOST}}/api/v2/monitor/system/ha-peer",
+        "method": "GET",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "none",
+          "json": null,
+          "text": null,
+          "xml": null,
+          "graphql": null,
+          "sparql": null,
+          "formUrlEncoded": [],
+          "multipartForm": [],
+          "file": []
+        },
+        "script": {
+          "req": null,
+          "res": null
+        },
+        "vars": {
+          "req": [],
+          "res": []
+        },
+        "assertions": [],
+        "tests": null,
+        "docs": null,
+        "auth": {
+          "mode": "inherit"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "monitor_firewall-policy",
+      "filename": "monitor_firewall-policy.bru",
+      "seq": 19,
+      "settings": {
+        "encodeUrl": true,
+        "timeout": 0,
+        "followRedirects": true,
+        "maxRedirects": 5
+      },
+      "tags": [],
+      "examples": [],
+      "request": {
+        "url": "https://{{HOST}}/api/v2/monitor/firewall/policy",
+        "method": "GET",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "none",
+          "json": null,
+          "text": null,
+          "xml": null,
+          "graphql": null,
+          "sparql": null,
+          "formUrlEncoded": [],
+          "multipartForm": [],
+          "file": []
+        },
+        "script": {
+          "req": null,
+          "res": null
+        },
+        "vars": {
+          "req": [],
+          "res": []
+        },
+        "assertions": [],
+        "tests": null,
+        "docs": null,
+        "auth": {
+          "mode": "inherit"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "get_address",
+      "filename": "get_address.bru",
+      "seq": 1,
+      "settings": {
+        "encodeUrl": true,
+        "timeout": 0,
+        "followRedirects": true,
+        "maxRedirects": 5
+      },
+      "tags": [],
+      "examples": [],
+      "request": {
+        "url": "https://{{HOST}}/api/v2/cmdb/firewall/address",
+        "method": "GET",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "none",
+          "json": null,
+          "text": null,
+          "xml": null,
+          "graphql": null,
+          "sparql": null,
+          "formUrlEncoded": [],
+          "multipartForm": [],
+          "file": []
+        },
+        "script": {
+          "req": null,
+          "res": null
+        },
+        "vars": {
+          "req": [],
+          "res": []
+        },
+        "assertions": [],
+        "tests": null,
+        "docs": null,
+        "auth": {
+          "mode": "inherit"
+        }
+      }
+    },
+    {
+      "type": "http",
+      "name": "get_apiuser",
+      "filename": "get_apiuser.bru",
+      "seq": 20,
+      "settings": {
+        "encodeUrl": true,
+        "timeout": 0,
+        "followRedirects": true,
+        "maxRedirects": 5
+      },
+      "tags": [],
+      "examples": [],
+      "request": {
+        "url": "https://{{HOST}}/api/v2/cmdb/system/api-user",
+        "method": "GET",
+        "headers": [],
+        "params": [],
+        "body": {
+          "mode": "none",
+          "json": null,
+          "text": null,
+          "xml": null,
+          "graphql": null,
+          "sparql": null,
+          "formUrlEncoded": [],
+          "multipartForm": [],
+          "file": []
+        },
+        "script": {
+          "req": null,
+          "res": null
+        },
+        "vars": {
+          "req": [],
+          "res": []
+        },
+        "assertions": [],
+        "tests": null,
+        "docs": null,
+        "auth": {
+          "mode": "inherit"
+        }
+      }
+    }
+  ],
+  "environments": [],
+  "root": {
+    "request": {
+      "auth": {
+        "mode": "none",
+        "awsv4": null,
+        "basic": null,
+        "bearer": null,
+        "digest": null,
+        "ntlm": null,
+        "oauth2": null,
+        "wsse": null,
+        "apikey": null
+      },
+      "headers": [
+        {
+          "uid": "r1nJYQ2m0AZtuzwIds6vy",
+          "name": "Authorization",
+          "value": "Bearer {{API}}",
+          "enabled": true
+        }
+      ],
+      "script": {},
+      "vars": {
+        "req": [
+          {
+            "uid": "qTd8AmhnSrtwDNWjVIWn7",
+            "name": "API",
+            "value": "#############",
+            "enabled": true,
+            "local": false
+          },
+          {
+            "uid": "H7PK9lpEMIDFKeyyovK8l",
+            "name": "HOST",
+            "value": "%%%%%%%%%%%%%%",
+            "enabled": true,
+            "local": false
+          }
+        ]
+      }
+    }
+  },
+  "brunoConfig": {
+    "opencollection": "1.0.0",
+    "name": "FORTIOS_bruno_collection",
+    "type": "collection",
+    "ignore": [
+      "node_modules",
+      ".git"
+    ],
+    "proxy": {
+      "inherit": true,
+      "config": {
+        "protocol": "http",
+        "hostname": "",
+        "port": "",
+        "auth": {
+          "username": "",
+          "password": ""
+        },
+        "bypassProxy": ""
+      }
+    }
+  },
+  "exportedAt": "2026-01-28T19:02:30.795Z",
+  "exportedUsing": "Bruno/3.0.2"
+}
